@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Muistiinpanot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Muistiinpanot</h1>
+    <ul id="notes-list"></ul>
+
+    <script>
+        async function loadNotes() {
+            let response = await fetch('notes/list.json');
+            let notes = await response.json();
+
+            let notesList = document.getElementById("notes-list");
+            notes.forEach(note => {
+                let li = document.createElement("li");
+                li.innerHTML = `<a href="note.html?file=${note.file}">${note.title}</a>`;
+                notesList.appendChild(li);
+            });
+        }
+        loadNotes();
+    </script>
+</body>
+</html>
