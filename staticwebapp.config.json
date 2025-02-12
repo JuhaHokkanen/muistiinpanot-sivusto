@@ -1,0 +1,12 @@
+{
+    "routes": [
+      {
+        "route": "/notes/{*all}",
+        "serve": "/notes/{all}",
+        "headers": {
+          "Cache-Control": "no-cache"
+        }
+      }
+    ]
+  }
+  
