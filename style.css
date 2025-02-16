@@ -65,7 +65,21 @@
             margin: 0 auto;       /* Keskittää elementin */
             text-align: center;   /* Keskittää tekstin */
             line-height: 1.6;     /* Lisää riviväliä tekstille luettavuuden parantamiseksi */
+            font-size: 16px;  /* Perusfonttikoko */
+
         }
+
+        /* Mobiililaitteet (näytön leveys alle 600px) */
+@media screen and (max-width: 600px) {
+    #note-content {
+        font-size: 20px;  /* Suurempi fonttikoko mobiililaitteilla */
+    }
+
+    a.back-link {
+        font-size: 1.5em; /* Mobiilissa suurempi fonttikoko linkille */
+    }
+}
+
         a.back-link {
             display: block;
             text-align: center;
