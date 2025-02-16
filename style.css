@@ -98,3 +98,12 @@ a.back-link {
 a.back-link:hover {
     text-decoration: underline;
 }
+
+/* Tekstisisällön tyyli */
+#note-content {
+    width: 80%;           /* Tekstin leveys 80% säilön leveydestä */
+    margin: 0 auto;       /* Keskittää elementin */
+    text-align: left;   /* Teksti vasemmalle (parempi luettavuus) */
+    line-height: 1.6;     /* Lisää riviväliä tekstille luettavuuden parantamiseksi */
+    font-size: 16px;  /* Perusfonttikoko */
+}
