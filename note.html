@@ -20,14 +20,23 @@
                 return;
             }
 
-            let response = await fetch(`notes/${file}`);
-            let text = await response.text();
+            try {
+                let response = await fetch(`notes/${file}`);
+                if (!response.ok) {
+                    throw new Error("Muistiinpanoa ei löydy!");
+                }
+                let text = await response.text();
 
-            document.getElementById("note-title").innerText = file;
-            if (file.endsWith(".md")) {
-                document.getElementById("note-content").innerHTML = marked.parse(text);
-            } else {
-                document.getElementById("note-content").innerHTML = `<pre>${text}</pre>`;
+                document.getElementById("note-title").innerText = file;
+
+                if (file.endsWith(".md")) {
+                    document.getElementById("note-content").innerHTML = marked.parse(text);
+                } else {
+                    document.getElementById("note-content").innerHTML = `<pre>${text}</pre>`;
+                }
+            } catch (error) {
+                document.getElementById("note-content").innerText = "Virhe ladattaessa muistiinpanoa!";
+                console.error(error);
             }
         }
         loadNote();

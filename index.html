@@ -7,20 +7,47 @@
 </head>
 <body>
     <h1>Muistiinpanot</h1>
-    <ul id="notes-list"></ul>
+    <ul id="notes-list">Ladataan...</ul>
 
     <script>
         async function loadNotes() {
-            let response = await fetch('notes/list.json');
-            let notes = await response.json();
+            try {
+                let response = await fetch('notes/list.json');
+                if (!response.ok) {
+                    throw new Error("Tiedostoa ei löydy!");
+                }
 
-            let notesList = document.getElementById("notes-list");
-            notes.forEach(note => {
-                let li = document.createElement("li");
-                li.innerHTML = `<a href="note.html?file=${note.file}">${note.title}</a>`;
-                notesList.appendChild(li);
-            });
+                let data = await response.text();
+                let notes;
+                try {
+                    notes = JSON.parse(data);
+                } catch (error) {
+                    console.error("JSON-virhe:", error);
+                    document.getElementById("notes-list").innerText = "Virhe ladattaessa muistiinpanoja!";
+                    return;
+                }
+
+                if (!Array.isArray(notes)) {
+                    console.error("Virhe: `notes` ei ole taulukko!", notes);
+                    document.getElementById("notes-list").innerText = "Virhe muistiinpanojen latauksessa!";
+                    return;
+                }
+
+                let notesList = document.getElementById("notes-list");
+                notesList.innerHTML = ""; // Tyhjennetään oletusteksti
+
+                notes.forEach(note => {
+                    let li = document.createElement("li");
+                    li.innerHTML = `<a href="note.html?file=${note.file}">${note.title}</a>`;
+                    notesList.appendChild(li);
+                });
+
+            } catch (error) {
+                console.error("Latausvirhe:", error);
+                document.getElementById("notes-list").innerText = "Virhe ladattaessa muistiinpanoja!";
+            }
         }
+
         loadNotes();
     </script>
 </body>
