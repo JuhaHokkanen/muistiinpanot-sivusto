@@ -60,10 +60,11 @@
                 font-size: 14px;
             }
         }
-        #notes-list {
-            margin: 0 auto;        /* Keskittää sisällön */
-            width: 80%;            /* Tekstin leveys on 80% säilön leveydestä */
+        #note-content {
+            width: 80%;           /* Tekstin leveys 80% säilön leveydestä */
+            margin: 0 auto;       /* Keskittää elementin */
+            text-align: justify;  /* Tasaa teksti molemmilta puolilta */
+            line-height: 1.6;     /* Lisää riviväliä tekstille luettavuuden parantamiseksi */
         }
-        
         
           
