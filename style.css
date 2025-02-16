@@ -63,8 +63,20 @@
         #note-content {
             width: 80%;           /* Tekstin leveys 80% säilön leveydestä */
             margin: 0 auto;       /* Keskittää elementin */
-            text-align: justify;  /* Tasaa teksti molemmilta puolilta */
+            text-align: center;   /* Keskittää tekstin */
             line-height: 1.6;     /* Lisää riviväliä tekstille luettavuuden parantamiseksi */
+        }
+        a.back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        a.back-link:hover {
+            text-decoration: underline;
         }
         
           
