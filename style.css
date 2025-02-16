@@ -90,6 +90,9 @@
     #note-content {
         font-size: 24px;  /* Suurempi fonttikoko mobiililaitteilla */
     }
+    body {
+        background-color: olive;
+      }
 
     a.back-link {
         font-size: 24px; /* Mobiilissa suurempi fonttikoko linkille */
