@@ -72,7 +72,7 @@
         /* Mobiililaitteet (näytön leveys alle 600px) */
 @media screen and (max-width: 600px) {
     #note-content {
-        font-size: 20px;  /* Suurempi fonttikoko mobiililaitteilla */
+        font-size: 24px;  /* Suurempi fonttikoko mobiililaitteilla */
     }
 
     a.back-link {
