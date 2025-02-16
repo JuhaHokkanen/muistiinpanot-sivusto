@@ -2,7 +2,7 @@
 
 "Sankarit":
 
-Nameless one puoli-örkki barbaari (kalpeam ihmisen näköinen)
+Nameless one puoli-örkki barbaari (kalpean ihmisen näköinen)
 
 Inari Theodemar, half-ef ranger Beast master
 
