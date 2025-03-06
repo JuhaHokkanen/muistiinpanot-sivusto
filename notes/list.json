@@ -1,10 +1,10 @@
-[
-  {
-    "file": "muistiinpano1.md",
-    "title": "muistiinpano1"
-  },
-  {
-    "file": "muistiinpano2.md",
-    "title": "muistiinpano2"
-  }
+﻿[
+    {
+        "file":  "muistiinpano1.md",
+        "title":  "muistiinpano1"
+    },
+    {
+        "file":  "muistiinpano2.md",
+        "title":  "muistiinpano2"
+    }
 ]
