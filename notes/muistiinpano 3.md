@@ -1,4 +1,4 @@
-# Kolmas pelikerta 9.3.2025
+# Toinen pelikerta 9.3.2025
 
 ## Taistelu Targosissa!
 
