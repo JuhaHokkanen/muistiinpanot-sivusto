@@ -176,3 +176,23 @@ a.back-link:hover {
         font-size: 16px;
     }
 }
+
+/* Kuvien muotoilu, jotta ne eivät kasva liian suuriksi */
+#note-content img {
+    max-width: 100%; /* Kuva ei voi ylittää säilön leveyttä */
+    max-height: 500px; /* Kuvan maksimikorkeus */
+    height: auto; /* Säilyttää kuvan mittasuhteet */
+    display: block; /* Poistaa ylimääräiset tyhjät tilat kuvan ympäriltä */
+    margin: 10px auto; /* Keskittää kuvat automaattisesti */
+    border-radius: 8px; /* Pehmentää kuvien reunoja */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lisää kevyen varjon */
+    object-fit: contain; /* Pitää kuvan mittasuhteet oikeina eikä venytä */
+}
+
+/* Mobiililaitteiden optimointi (pienempi max-height ja leveys) */
+@media screen and (max-width: 600px) {
+    #note-content img {
+        max-width: 90%; /* Pienennetään hieman mobiilissa */
+        max-height: 300px; /* Mobiilissa kuvat eivät vie liikaa tilaa */
+    }
+}
