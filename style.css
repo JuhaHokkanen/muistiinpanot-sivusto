@@ -140,6 +140,8 @@ a.back-link {
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.3s ease;
+    margin-bottom: 40px; /* Lisää tilaa linkin alle */
+
 }
 
 /* Takaisin-linkin hover-tila */
