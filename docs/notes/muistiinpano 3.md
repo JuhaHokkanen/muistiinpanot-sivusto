@@ -2,7 +2,7 @@
 
 ## Taistelu Targosissa!
 
-![Targos](../images/targos.png)
+![Targos](/muistiinpanot-sivusto/images/targos.png)
 
 Saavumme majatalolle ja näemme koiravaljaat ilman isäntää, seuraamme sitä vaatimattoman talon luokse, viereiset talot ovat hylättyjä.
 Talossa asuva mies tarjoaa meille lämmintä siideriä ja kertoo että hänen ??? on palkattu pari päivää sitten oppaaksi Kelvin Cairn kukkulan huipulle seikkailija porukan toimesta. He lähtivät vuorelle 6 koiran kanssa, joista yksisuosikkikoira palasi ilman isäntää, Garrettin toimiessa oppaana.

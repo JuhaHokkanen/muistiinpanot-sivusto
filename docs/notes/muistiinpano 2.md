@@ -1,10 +1,10 @@
 # Ensimmäinen pelikerta DnD 5e la 8.2.2025
 
-![Sword Coast](../images/Sword-Coast.jpg)
+![Sword Coast](/muistiinpanot-sivusto/images/Sword-Coast.jpg)
 
-![Icewind Tale](../images/icewind-dale.webp)
+![Icewind Tale](/muistiinpanot-sivusto/images/icewind-dale.webp)
 
-![Bryn Shander](../images/bryn-shander.webp)
+![Bryn Shander](/muistiinpanot-sivusto/images/bryn-shander.webp)
 
 Päädyimme pohjoiseen, 10-kaupungin alueelle hanttihommien perässä. Olemme viettäneet talven täällä pohjoisessa, Bryn Shanderin kaupungissa. Talvi on ollut ankara ja tuntuu että se jatkuisi loputtomiin. Emme pääse täältä pois koska reitti etelään on vieläkin tukossa. Minulta alkaa olemaan rahat loppu, ja alan olemaan epätoivoinen. Mikä tahansa työkeikka kävisi minulle. Olemme viettäneet aikaa majatalossa muiden palkkionmetsästäjien kanssa. Olemme kuulleet huhuja taivaalla lentävästä demonista, jääneidosta, joka kiitää taivaalla loitsien revontulia taivaalle. Myös huhuja kadonneesta, tuhansia vuosia vanhasta lentävästä kaupungista, joka olisi romahtanut tänne jonnekin pohjoiseen on ollut liikkeellä. Olemme kuulleet myös huhuja, että mustia kääpiöitä olisi tullut luolistaan maanpinnalle eteläisillä vuorilla, he olisivat tehneet linnoituksen ja kuulemma etsivät jotain, ottavat kivinäytteitä sekä ottavat ihmisiä orjikseen.
 

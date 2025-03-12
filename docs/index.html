@@ -1,68 +1,57 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kampanja muistiinpanot</title>
-    <meta name="description" content="D&D-kampanjan muistiinpanot. Selaa ja lue aiempia muistiinpanoja helposti.">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kampanja muistiinpanot</title>
+  <meta name="description" content="D&D-kampanjan muistiinpanot. Selaa ja lue aiempia muistiinpanoja helposti.">
+  <!-- Oletetaan, että style.css on docs-kansion juurella -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Kampanja muistiinpanot</h1>
+  <h1>Kampanja muistiinpanot</h1>
 
-    <!-- Lista, johon muistiinpanot ladataan -->
-    <ul id="notes-list" aria-live="polite">Ladataan...</ul>
+  <!-- Lista, johon muistiinpanot ladataan -->
+  <ul id="notes-list" aria-live="polite">Ladataan...</ul>
 
-    <script>
-        /**
-         * Lataa muistiinpanot JSON-tiedostosta ja lisää ne listaan.
-         */
-        async function loadNotes() {
-            const notesList = document.getElementById("notes-list");
-
-            try {
-                // Lataa JSON-tiedosto
-                let response = await fetch('notes/list.json');
-
-                // Tarkistetaan, onko vastaus OK
-                if (!response.ok) {
-                    throw new Error(`Tiedoston lataus epäonnistui: ${response.status} ${response.statusText}`);
-                }
-
-                let data = await response.json(); // Muutetaan JSON:iksi
-
-                // Tarkistetaan, että data on taulukko
-                if (!Array.isArray(data)) {
-                    throw new Error("Muistiinpanot eivät ole taulukossa!");
-                }
-
-                // Tyhjennetään oletusteksti
-                notesList.innerHTML = "";
-
-                // Luodaan lista muistiinpanoista
-                data.forEach(note => {
-                    if (note.title && note.file) {
-                        let li = document.createElement("li");
-                        li.innerHTML = `<a href="note.html?file=${encodeURIComponent(note.file)}">${note.title}</a>`;
-                        notesList.appendChild(li);
-                    } else {
-                        console.warn("Virheellinen muistiinpano-objekti:", note);
-                    }
-                });
-
-                // Jos listaus on tyhjä
-                if (notesList.innerHTML === "") {
-                    notesList.innerText = "Ei muistiinpanoja.";
-                }
-
-            } catch (error) {
-                console.error("Muistiinpanojen latausvirhe:", error);
-                notesList.innerHTML = `<li style="color: red;">⚠️ Virhe ladattaessa muistiinpanoja!</li>`;
-            }
+  <script>
+    /**
+     * Lataa muistiinpanot JSON-tiedostosta ja lisää ne listaan.
+     * Oletuksena JSON-tiedosto sijaitsee docs/notes/list.json.
+     */
+    async function loadNotes() {
+      const notesList = document.getElementById("notes-list");
+      try {
+        let response = await fetch('notes/list.json');
+        if (!response.ok) {
+          throw new Error(`Tiedoston lataus epäonnistui: ${response.status} ${response.statusText}`);
         }
+        let data = await response.json();
+        if (!Array.isArray(data)) {
+          throw new Error("Muistiinpanot eivät ole taulukossa!");
+        }
+        notesList.innerHTML = "";
+        data.forEach(note => {
+          if (note.title && note.file) {
+            // Oletuksena note.html on myös docs-kansion juurella
+            let li = document.createElement("li");
+            li.innerHTML = `<a href="note.html?file=${encodeURIComponent(note.file)}">${note.title}</a>`;
+            notesList.appendChild(li);
+          } else {
+            console.warn("Virheellinen muistiinpano-objekti:", note);
+          }
+        });
+        if (notesList.innerHTML === "") {
+          notesList.innerText = "Ei muistiinpanoja.";
+        }
+      } catch (error) {
+        console.error("Muistiinpanojen latausvirhe:", error);
+        notesList.innerHTML = `<li style="color: red;">⚠️ Virhe ladattaessa muistiinpanoja!</li>`;
+      }
+    }
 
-        // Kutsutaan lataustoimintoa, kun sivu ladataan
-        loadNotes();
-    </script>
+    // Kutsutaan lataustoimintoa, kun sivu ladataan
+    loadNotes();
+  </script>
 </body>
 </html>
