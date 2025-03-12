@@ -24,17 +24,16 @@ body {
 */
 
 h1 {
-    font-size: 2.5em; /* Isompi fonttikoko */
+    font-size: 2em; /* Isompi fonttikoko */
     color: #0056b3; /* Syvä sininen väri */
     margin-top: 20px;
-    text-transform: uppercase; /* Muuttaa tekstin isoiksi kirjaimiksi */
     font-weight: 700; /* Paksumpi fontti */
     letter-spacing: 2px; /* Lisää välistystä kirjaimiin */
     
     /* Sininen liukuväri, joka luo tyylikkään efektin */
-    background: linear-gradient(to right, #0056b3, #007bff);
+   /* background: linear-gradient(to right, #0056b3, #007bff);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
 }
 
 /* 
@@ -71,7 +70,7 @@ ul#notes-list li {
 
 /* Hover-efekti (kun hiiri on muistiinpanon päällä) */
 ul#notes-list li:hover {
-    transform: translateY(-5px); /* Nostaa elementtiä ylöspäin */
+    transform: translateY(-1px); /* Nostaa elementtiä ylöspäin */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Syvempi varjo */
 }
 
@@ -196,3 +195,15 @@ a.back-link:hover {
         max-height: 300px; /* Mobiilissa kuvat eivät vie liikaa tilaa */
     }
 }
+
+/* Muistiinpanon sisältö - Rajoittaa tekstin leveyden ja parantaa luettavuutta */
+#note-content {
+    max-width: 800px; /* Teksti ei leviä liian leveäksi */
+    margin: 0 auto; /* Keskittää tekstin */
+    padding: 20px; /* Lisää tyhjää tilaa reunoille */
+    text-align: left; /* Teksti tasaantuu vasemmalle */
+    line-height: 1.6; /* Lisää riviväliä parantamaan luettavuutta */
+    font-size: 18px; /* Sopivan kokoinen fontti */
+    word-wrap: break-word; /* Estää pitkien sanojen venyttämisen yli rajan */
+}
+
