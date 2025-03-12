@@ -16,6 +16,6 @@ Hlind epäilee, että murhat liittyvät jotenkin uhrauksiin jääneidolle. Lähd
 
 Jatkamme matkaa Targosiin ja matkalla tapaamme kauppiaita, jotka oudosti itse vetävät ahkiota. He kertovat, että Targosissa heidän koiransa, jotka normaalisti vetävät ahkiota, olivat raadeltu kuoliaaksi. Kuulemme myös huhuja Bremenin kylän vieressä olevassa järvessä olevasta merihirviöstä, joka on hyökännyt veneiden kimppuun.
 
-![Targos](../images/targos.webp)
+![Targos](/muistiinpanot-sivusto/images/targos.webp)
 
 Kun saavumme Targosiin ja päädymme kaupunginjohtajan Naerthin puheille. Hän kertoo, että murha tapahtui täälläkin jäätikarilla. Arpajaiset, jolla valitaan uhri jääneidolle, liittyy nähtävästi jotenkin tähän. Tämä kuollut veneenrakentaja oli huhujen mukaan lahjonut itsensä pois listalta. Myös Sehrek oli nähty lähellä murhapaikkaa. Seuraavaksi alamme etsimään kaupungin vartijoston johtajaa, joka on vastuusta arpajaisista.
