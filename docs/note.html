@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kampanja muistiinpano</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kampanjan muistiinpanot. Lue yksittäisiä muistiinpanoja suoraan selaimessa.">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+</head>
+<body>
+    <h1 id="note-title" aria-live="polite">Ladataan...</h1>
+
+    <!-- Muistiinpanon sisältö -->
+    <div id="note-content" aria-live="polite"></div>
+
+    <!-- Takaisin-linkki etusivulle -->
+    <a href="index.html" class="back-link">Takaisin</a>
+
+    <script>
+        /**
+         * Lataa yksittäinen muistiinpano URL-parametrin perusteella.
+         */
+        async function loadNote() {
+            const params = new URLSearchParams(window.location.search);
+            let file = params.get("file");
+
+            // Jos tiedostonimi puuttuu, näytetään virheilmoitus
+            if (!file) {
+                document.getElementById("note-content").innerText = "Muistiinpanoa ei löytynyt!";
+                return;
+            }
+
+            try {
+                let response = await fetch(`notes/${file}`);
+
+                // Tarkistetaan, löytyykö tiedosto
+                if (!response.ok) {
+                    throw new Error(`Muistiinpanoa ei löydy: ${response.status} ${response.statusText}`);
+                }
+
+                let text = await response.text();
+
+                // Päivitetään selainikkunan otsikko muistiinpanon nimeksi
+                document.title = `Muistiinpano - ${file}`;
+                document.getElementById("note-title").innerText = file;
+
+                // Jos tiedosto on Markdown-formaatissa, renderöidään se HTML:ksi
+                if (file.endsWith(".md")) {
+                    document.getElementById("note-content").innerHTML = marked.parse(text);
+                } else {
+                    // Näytetään muu kuin Markdown-muotoisena pelkkänä tekstinä
+                    document.getElementById("note-content").innerHTML = text;
+                }
+            } catch (error) {
+                console.error("Muistiinpanon latausvirhe:", error);
+                document.getElementById("note-content").innerText = "Virhe ladattaessa muistiinpanoa!";
+            }
+        }
+
+        // Ladataan muistiinpano heti, kun sivu aukeaa
+        loadNote();
+    </script>
+</body>
+</html>
