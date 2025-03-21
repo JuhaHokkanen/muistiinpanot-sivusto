@@ -1,6 +1,6 @@
 # Kampanjan aloitus
 
-"Sankarit":
+Sankarit:
 
 Nameless one puoli-örkki barbaari (kalpean ihmisen näköinen)
 
