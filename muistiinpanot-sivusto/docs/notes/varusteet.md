@@ -1,0 +1,8 @@
+## Nameless one:
+Mantle of the Warlord: A rugged cape that once belonged to a legendary orc warlord, imbued with the spirit of leadership and resilience. While wearing the cape, the barbarian gains advantage on saving throws against being frightened and can rally their allies. Once per long rest, as a bonus action, the barbarian can let out a war cry that grants them and up to three allies within 30 feet temporary hit points equal to the barbarian's level + the barbarian's Constitution modifier.
+
+## Dahar:
+Gauntlets of Divine Channeling: Elegant gauntlets that shine with a soft, inner light, crafted from silver and inlaid with symbols sacred to the paladin's deity. These gauntlets enhance the paladin's ability to channel divine energy. They add +1 to the paladin's spell attack rolls and spell saving throw DCs. Additionally, once per long rest, the paladin can use these gauntlets to cast "Lesser Restoration" without expending a spell slot or to enhance a single use of Lay on Hands to also remove a condition (poisoned, blinded, deafened, or paralyzed) from the target.
+
+## Inari:
+Bow of the Beast Whisperer: This finely crafted longbow is adorned with intricate carvings depicting various beasts. In addition to functioning as a +1 longbow, it grants the wielder the ability to cast "Speak with Animals" as a ritual. Once per long rest, when an arrow from this bow strikes a beast, the ranger can choose to deal no damage and instead charm the beast for 1 hour, provided the beast fails a Wisdom saving throw. This charm effect allows the ranger to give simple commands and communicate with the beast as if they shared a language.

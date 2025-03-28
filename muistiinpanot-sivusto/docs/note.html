@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <!-- Määritellään sivun merkkikoodaukseksi UTF-8, mikä varmistaa, että erikoismerkit näytetään oikein -->
+    <meta charset="UTF-8">
+    
+    <!-- Sivun otsikko, joka näkyy selaimen välilehdessä -->
+    <title>Kampanja muistiinpano</title>
+    
+    <!-- Responsiivisuus: Asetetaan näkymä leveydelle ja skaalaus sopimaan eri laitteille -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Sivun kuvaus hakukoneille ja sosiaaliselle medialle -->
+    <meta name="description" content="Kampanjan muistiinpanot. Lue yksittäisiä muistiinpanoja suoraan selaimessa.">
+    
+    <!-- Linkitetään ulkoinen CSS-tiedosto, joka sisältää sivun tyylit -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Ladataan Marked-kirjasto, jonka avulla Markdown-muotoiset tiedostot voidaan muuntaa HTML:ksi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+</head>
+<body>
+    <!-- Otsikkoelementti, jonka sisältöä päivitetään muistiinpanon lataamisen jälkeen.
+         aria-live="polite" ilmoittaa apuvälineille, että sisältö päivittyy dynaamisesti -->
+    <h1 id="note-title" aria-live="polite">Ladataan...</h1>
+
+    <!-- Kontaineri, johon muistiinpanon sisältö lisätään latauksen jälkeen -->
+    <div id="note-content" aria-live="polite"></div>
+
+    <!-- Linkki, jonka avulla käyttäjä voi palata etusivulle -->
+    <a href="index.html" class="back-link">Takaisin</a>
+
+    <script>
+        /**
+         * Lataa yksittäinen muistiinpano URL-parametrin perusteella.
+         * Tämä funktio hakee URL-osoitteen parametrista tiedoston nimen ("file"),
+         * lataa kyseisen tiedoston ja näyttää sen sisällön sivulla.
+         */
+        async function loadNote() {
+            // Luodaan URLSearchParams-olio, joka helpottaa URL-parametrien lukemista.
+            // Tässä haetaan tiedoston nimi, joka on annettu parametrista "file".
+            const params = new URLSearchParams(window.location.search);
+            let file = params.get("file");
+
+            // Tarkistetaan, että tiedoston nimi on annettu.
+            // Jos "file" on tyhjä, näytetään viesti "Muistiinpanoa ei löytynyt!" ja lopetetaan funktion suoritus.
+            if (!file) {
+                document.getElementById("note-content").innerText = "Muistiinpanoa ei löytynyt!";
+                return;
+            }
+
+            try {
+                // Yritetään hakea tiedosto "notes"-kansiosta käyttäen tiedoston nimeä.
+                let response = await fetch(`notes/${file}`);
+
+                // Jos tiedoston lataus epäonnistuu (response.ok on false),
+                // heitetään virhe, joka sisältää palvelimen palauttaman virhekoodin ja -viestin.
+                if (!response.ok) {
+                    throw new Error(`Muistiinpanoa ei löydy: ${response.status} ${response.statusText}`);
+                }
+
+                // Luetaan ladatun tiedoston sisältö tekstimuodossa.
+                let text = await response.text();
+
+                // Päivitetään selaimen välilehden otsikko ja sivun pääotsikko vastaamaan ladattua tiedostoa.
+                document.title = `Muistiinpano - ${file}`;
+                document.getElementById("note-title").innerText = file;
+
+                // Tarkistetaan, onko tiedosto Markdown-muodossa.
+                // Jos tiedoston nimi päättyy ".md", oletetaan sen olevan Markdown-tekstiä.
+                if (file.endsWith(".md")) {
+                    // Muutetaan Markdown-teksti HTML:ksi Marked-kirjaston avulla,
+                    // jolloin muotoilut (kuten otsikot, listat jne.) näkyvät oikein.
+                    document.getElementById("note-content").innerHTML = marked.parse(text);
+                } else {
+                    // Jos tiedosto ei ole Markdown-muodossa, näytetään sisältö sellaisenaan.
+                    document.getElementById("note-content").innerHTML = text;
+                }
+            } catch (error) {
+                // Mikäli tiedoston lataus tai muu vaihe epäonnistuu,
+                // tulostetaan virhe konsoliin ja näytetään käyttäjälle ilmoitus virheestä.
+                console.error("Muistiinpanon latausvirhe:", error);
+                document.getElementById("note-content").innerText = "Virhe ladattaessa muistiinpanoa!";
+            }
+        }
+
+        // Kun sivu latautuu, kutsutaan loadNote-funktiota automaattisesti,
+        // jotta muistiinpano haetaan ja näytetään heti.
+        loadNote();
+    </script>
+</body>
+</html>
