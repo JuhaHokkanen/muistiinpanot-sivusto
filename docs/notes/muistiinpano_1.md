@@ -1,4 +1,4 @@
-# Kampanjan aloitus 8.2.
+# Kampanjan aloitus 8.2.2025
 
 Sankarit:
 
