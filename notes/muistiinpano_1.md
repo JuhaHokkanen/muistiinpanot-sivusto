@@ -4,7 +4,7 @@ Sankarit:
 
 Nameless one puoli-örkki barbaari (kalpean ihmisen näköinen)
 
-![Nameless One](/images/namelessone_token.png)
+![Nameless One](/muistiinpanot-sivusto/images/namelessone_token.png)
 
 Inari Theodemar, half-elf ranger Beast master
 
