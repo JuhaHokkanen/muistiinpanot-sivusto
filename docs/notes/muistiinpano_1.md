@@ -1,4 +1,4 @@
-# Kampanjan aloitus
+# Kampanjan aloitus 8.2.
 
 Sankarit:
 
