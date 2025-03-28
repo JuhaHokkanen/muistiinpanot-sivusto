@@ -1,22 +1,22 @@
-[
-  {
-    "file": "muistiinpano_1.md",
-    "title": "muistiinpano_1"
-  },
-  {
-    "file": "muistiinpano_2.md",
-    "title": "muistiinpano_2"
-  },
-  {
-    "file": "muistiinpano_3.md",
-    "title": "muistiinpano_3"
-  },
-  {
-    "file": "muistiinpano_4.md",
-    "title": "muistiinpano_4"
-  },
-  {
-    "file": "varusteet.md",
-    "title": "varusteet"
-  }
+﻿[
+    {
+        "file":  "muistiinpano_1.md",
+        "title":  "muistiinpano_1"
+    },
+    {
+        "file":  "muistiinpano_2.md",
+        "title":  "muistiinpano_2"
+    },
+    {
+        "file":  "muistiinpano_3.md",
+        "title":  "muistiinpano_3"
+    },
+    {
+        "file":  "muistiinpano_4.md",
+        "title":  "muistiinpano_4"
+    },
+    {
+        "file":  "varusteet.md",
+        "title":  "varusteet"
+    }
 ]
