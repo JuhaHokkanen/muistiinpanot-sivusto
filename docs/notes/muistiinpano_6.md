@@ -1,0 +1,5 @@
+# Viides pelikerta 17.5.2025
+
+## Taistelu tundralla
+
+Taistelun jälkeen tutkimme lopputilan. Selvitämme että Durth on Duergar nimi ja heidän johtajansa on Xardorok. Vesku tutkii ruumiissa kasvavia sieniä, niistä ei ole hyötykäyttöön, mutta hän ottaa kuitenkin niitä talteen. Nousumme tason levon jälkeen. Tutkittuamme alueen löydämme healing potionin, rahaa sekä sekalaisia tavaroita. Jatkamme matkaa kohti Car-konigin kylää jarthan opastuksella. Matkalla näemme kolme vihamielistä ihmistä jotka osoittautuvat epäkuolleiksi. Taistelemme heitä vastaan, ja onnistumme tappamaan heidät. Taistelun jälkeen tutkimme heidän ruumit. Heillä on primitiivisiä pamppuja joissa on chardalyn kristalleja kiinnitettyinä. Yhdellä heistä on hopeinen sormus sormessa jossa on frost maidenin symboli, eli kuusikulmainen lumihiutale. Otettuamme sormuksen käsiimme, sormus räjähtää ja löydämme itsemme itäisiltä vuorilta, kaivetun luolan suuaukolta. Menemme myrskyä suojaan tähän luolaan.
