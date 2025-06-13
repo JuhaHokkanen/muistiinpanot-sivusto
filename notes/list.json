@@ -1,30 +1,34 @@
 [
   {
-    "title": "muistiinpano_1",
-    "file": "muistiinpano_1.md"
+    "file": "muistiinpano_1.md",
+    "title": "muistiinpano_1"
   },
   {
-    "title": "muistiinpano_2",
-    "file": "muistiinpano_2.md"
+    "file": "muistiinpano_2.md",
+    "title": "muistiinpano_2"
   },
   {
-    "title": "muistiinpano_3",
-    "file": "muistiinpano_3.md"
+    "file": "muistiinpano_3.md",
+    "title": "muistiinpano_3"
   },
   {
-    "title": "muistiinpano_4",
-    "file": "muistiinpano_4.md"
+    "file": "muistiinpano_4.md",
+    "title": "muistiinpano_4"
   },
   {
-    "title": "muistiinpano_5",
-    "file": "muistiinpano_5.md"
+    "file": "muistiinpano_5.md",
+    "title": "muistiinpano_5"
   },
   {
-    "title": "muistiinpano_6",
-    "file": "muistiinpano_6.md"
+    "file": "muistiinpano_6.md",
+    "title": "muistiinpano_6"
   },
   {
-    "title": "varusteet",
-    "file": "varusteet.md"
+    "file": "muistiinpano_7.md",
+    "title": "muistiinpano_7"
+  },
+  {
+    "file": "varusteet.md",
+    "title": "varusteet"
   }
 ]
