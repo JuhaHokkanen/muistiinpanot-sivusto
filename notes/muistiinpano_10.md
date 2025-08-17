@@ -18,4 +18,4 @@ Sylvanus, metsän jumalan patsas. Lampi missä on patsas, lampi on siunattu. Se 
 
 Inari pullottaa pyhää vettä. Etsimme paikkaa mihin laittaa helmi tai sauva, emme löydä mitään. Korjaamme kärryn pyörän.
 
-Otamme kääpiön kamat ja jatkamme kohti good meadia kärryillä. Palaamme kylään ja siman tekijä esittäytyy, olivescha. hän iloitsee simoista ja vuohista. Shandar haluaa uudeksi kaupunginjohtajaksi. 
+Otamme kääpiön kamat ja jatkamme kohti good meadia kärryillä. Palaamme kylään ja siman tekijä esittäytyy, olivescha. Hän iloitsee simoista ja vuohista. Shandar haluaa uudeksi kaupunginjohtajaksi. 
