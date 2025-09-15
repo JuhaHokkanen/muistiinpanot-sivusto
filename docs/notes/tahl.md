@@ -1,4 +1,4 @@
-Tahl 3lvl II
+Tahl
 
 Ihmis velho, Tahl. Wizard, 6 lvl.
 
