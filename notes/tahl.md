@@ -19,13 +19,13 @@ Spell attack bonus: +6
 2nd level: 3 slots
 3rd level: 3 slots
 
-cantrips:
+cantrips:  
 + minor illusion
 + light
 + fire bolt
 + mage hand
 
-1st level:
+1st level:  
 Shield *
 Magic Missile *
 Disguise Self
@@ -39,7 +39,7 @@ Invisibility *
 blur
 silence
 
-3rd level:
+3rd level:  
 Counterspell *
 Dispel Magic *
 Fireball * 
