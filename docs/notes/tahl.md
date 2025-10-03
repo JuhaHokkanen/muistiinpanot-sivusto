@@ -33,7 +33,7 @@ Detect Magic
 feather fall *
 identify *
 
-2nd level:
+2nd level:  
 Mirror Image * 
 Invisibility *
 blur
