@@ -29,24 +29,24 @@ cantrips:
 1st level 
 + **Shield** https://www.dndbeyond.com/spells/2619019-shield
 + **Magic Missile** https://www.dndbeyond.com/spells/2619022-magic-missile
-+ Disguise Self
-+ Detect Magic
-+ **feather fall**
-+ **identify**
++ Disguise Self https://www.dndbeyond.com/spells/2069-disguise-self
++ Detect Magic https://www.dndbeyond.com/spells/2065-detect-magic
++ **feather fall** https://www.dndbeyond.com/spells/2095-feather-fall
++ **identify** https://www.dndbeyond.com/spells/2152-identify
 
-2nd level,
-**Mirror Image**
-**Invisibility**
-blur
-silence
-Shatter
+2nd level
++ **Mirror Image** https://www.dndbeyond.com/spells/2193-mirror-image
++ **Invisibility** https://www.dndbeyond.com/spells/2159-invisibility
++ blur https://www.dndbeyond.com/spells/2020-blur
++ silence https://www.dndbeyond.com/spells/2251-silence
++ Shatter https://www.dndbeyond.com/spells/2246-shatter
 
-3rd level,
-**Counterspell**
-**Dispel Magic**
-**Fireball**
-remove curse
+3rd level
++ **Counterspell** https://www.dndbeyond.com/spells/2051-counterspell
++ **Dispel Magic** https://www.dndbeyond.com/spells/2072-dispel-magic
++ **Fireball** https://www.dndbeyond.com/spells/2102-fireball
++ remove curse https://www.dndbeyond.com/spells/2229-remove-curse
 
 4th level
-Banishment
-**Greater Invisibility**
++ Banishment https://www.dndbeyond.com/spells/2010-banishment
++ **Greater Invisibility** https://www.dndbeyond.com/spells/2128-greater-invisibility
