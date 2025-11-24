@@ -27,26 +27,26 @@ cantrips:
 + mage hand
 
 1st level 
-**Shield,**
-**Magic Missile, **
-Disguise Self,
-Detect Magic,
-**feather fall, **
-**identify, **
+**Shield**
+**Magic Missile**
+Disguise Self
+Detect Magic
+**feather fall**
+**identify**
 
 2nd level,
-**Mirror Image, **
-**Invisibility, **
-blur,
-silence,
+**Mirror Image**
+**Invisibility**
+blur
+silence
 Shatter
 
 3rd level,
-**Counterspell, **
-**Dispel Magic, **
-**Fireball **
+**Counterspell**
+**Dispel Magic**
+**Fireball**
 remove curse
 
 4th level
-Banishment,
-**Greater Invisibility **
+Banishment
+**Greater Invisibility**
