@@ -27,12 +27,12 @@ cantrips:
 + mage hand https://www.dndbeyond.com/spells/2173-mage-hand
 
 1st level 
-**Shield**
-**Magic Missile**
-Disguise Self
-Detect Magic
-**feather fall**
-**identify**
++ **Shield** https://www.dndbeyond.com/spells/2619019-shield
++ **Magic Missile** https://www.dndbeyond.com/spells/2619022-magic-missile
++ Disguise Self
++ Detect Magic
++ **feather fall**
++ **identify**
 
 2nd level,
 **Mirror Image**
