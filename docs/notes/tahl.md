@@ -21,10 +21,10 @@ Spell attack bonus: +6
 4th level: 1 slots
 
 cantrips:
-+ minor illusion
-+ light
-+ fire bolt
-+ mage hand
++ minor illusion https://www.dndbeyond.com/spells/2191-minor-illusion
++ light https://www.dndbeyond.com/spells/2166-light
++ fire bolt https://www.dndbeyond.com/spells/2103-fire-bolt
++ mage hand https://www.dndbeyond.com/spells/2173-mage-hand
 
 1st level 
 **Shield**
