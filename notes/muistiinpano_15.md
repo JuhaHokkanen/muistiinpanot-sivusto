@@ -1,6 +1,6 @@
 Osa 19 7.12.2025
 
-#Kylmä saari
+# Kylmä saari
 
 Saavumme koiravaljakoilla laiturilla, laiturin vieressä on kivinen mökki. Soitamme kelloa ja rantaan saapuu puhuva valas jonka kyydissä pääsemme saarelle. Saari on nimeltään Grimsgalle. Se on vanha linnoitus jossa jääjättiläiset ovat olleet. Saari on erityisen kylmä. Saamme varoituksen että "Älkää menkö linnoituksen katolle tai ylempiin kerroksiin." Saavumme laiturille. Saarella kajastaa kaukana valo. Kirja jota etsimme on linnoituksen kellarikerroksessa. Siivekäs olento lentelee rannassa. Se on jäämefitti elementaali. Seuraamme sitä rantaa pitkin. Näemme laivan hylyn joka on vanha sota-alus. 
 
