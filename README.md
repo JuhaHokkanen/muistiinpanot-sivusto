@@ -1,3 +1,3 @@
 # muistiinpanot-sivusto
 
-https://juhahokkanen.github.io/muistiinpanot-sivusto/
+https://tinke80.github.io/muistiinpanot-sivusto/
