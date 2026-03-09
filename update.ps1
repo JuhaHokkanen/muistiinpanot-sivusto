@@ -104,5 +104,5 @@ Write-Host "Odota 60 sekuntia päivityksen valmistumiseksi..."
 Start-Sleep -Seconds 60
 
 # Avaa GitHub Pages -sivu
-$webPageUrl = "https://juhahokkanen.github.io/muistiinpanot-sivusto/"
+$webPageUrl = "https://tinke80.github.io/muistiinpanot-sivusto/"
 Start-Process $webPageUrl
